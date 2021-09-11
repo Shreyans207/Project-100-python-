@@ -30,12 +30,14 @@ def main() :
          accountBalance = accountBalance - transaction
          print(f'Account Balance : {accountBalance}')
 
-         question2 = bool(input('Wanna play more ? : '))
+         question2 = bool(int(input('Wanna play more ? (0/1) : ')))
 
-         if (question2 == False) : 
+         if (question2 == 0) : 
             loop = False
             print('Thanks for playing')
             rate = input('Rate Us : ')
+            if(rate != None) : 
+               print('Thanks for your opinion!!')
          else : 
             loop = True
       else : 
